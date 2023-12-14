@@ -746,8 +746,8 @@ def swiftParser(path, sbom):
                                 }
                                 sbom["dependencies"].append(dependency)
                     except JSONDecodeError as e:
-                        print(f"Error decoding JSON in file {file_path}: {e}")
-                        print(f"Skipping file: {file_path}")
+                        # print(f"Error decoding JSON in file {file_path}: {e}")
+                        # print(f"Skipping file: {file_path}")
                         # Skip the file and continue with the next one
                         continue
 
